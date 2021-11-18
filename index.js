@@ -1,6 +1,8 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const PORT = 8080;
 
+app.use(express.json())
 
 app.listen(
     PORT,
@@ -9,7 +11,7 @@ app.listen(
 
 app.get('/airsoft', (req, res) => {
     res.status(200).send({
-        kartoffelnSalad:'@@@ççç',
+        kartoffelnSalad:'@@@uyguugççç',
         length:'3days'
     });
 } )
